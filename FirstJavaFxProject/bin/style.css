@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Root container style */
+.vbox {
+    -fx-background-color: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    -fx-padding: 50;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-background-radius: 20;
+    -fx-font-family: 'Orbitron', sans-serif;
+}
+
+/* Logo image view */
+.image-view {
+    -fx-effect: dropshadow(gaussian, #00e5ff, 20, 0.5, 0, 0);
+    -fx-margin-bottom: 10;
+}
+
+/* Neon-styled title */
+.title-label {
+    -fx-font-size: 28px;
+    -fx-text-fill: #9bf5ff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #007986, 15, 0.9, 0, 0);
+    -fx-padding: 10 0 20 0;
+}
+
+/* Input fields */
+.text-field,
+.password-field {
+    -fx-pref-width: 260px;
+    -fx-font-size: 16px;
+    -fx-background-color: #101820;
+    -fx-text-fill: #00e5ff;
+    -fx-background-radius: 10;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, #00e5ff99, 10, 0.4, 0, 0);
+    -fx-padding: 10;
+    -fx-highlight-fill: #00e5ff;
+    -fx-highlight-text-fill: black;
+    -fx-caret-color: #00e5ff;
+}
+
+/* Focused field glow */
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #80ffff;
+    -fx-effect: dropshadow(gaussian, #80ffff, 15, 0.6, 0, 0);
+}
+
+/* Checkbox style */
+.check-box {
+    -fx-text-fill: #00e5ff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 5 0;
+}
+
+.check-box:hover {
+    -fx-text-fill: #80ffff;
+}
+
+/* Button with neon effects */
+.button {
+    -fx-background-color: #101820;
+    -fx-border-color: #00e5ff;
+    -fx-text-fill: #00e5ff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 25;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(gaussian, #00e5ff, 20, 0.8, 0, 0);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Button hover fix */
+.button:hover {
+    -fx-background-color: #00e5ff;
+    -fx-text-fill: #101820; /* Make text dark for visibility */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, #00ffff, 25, 1.0, 0, 0);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-background-color: #00bcd4;
+    -fx-text-fill: #000000;
+}

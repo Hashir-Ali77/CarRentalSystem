@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="LoginController"
+      styleClass="vbox">
+
+    <!-- Neon Logo Image -->
+    <ImageView fx:id="logo"
+               fitHeight="80" fitWidth="80"
+               pickOnBounds="true" preserveRatio="true"
+               styleClass="image-view">
+        <image>
+            <Image url="@logo.png" />
+        </image>
+    </ImageView>
+
+    <!-- Neon Title -->
+    <Label text="Car Rental Login" styleClass="title-label"/>
+
+    <!-- Username Field -->
+    <TextField fx:id="usernameField"
+               promptText="Username"
+               styleClass="text-field"/>
+
+    <!-- Password Field (hidden input) -->
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   styleClass="password-field"/>
+
+    <!-- Visible Password Field (for show password toggle) -->
+    <TextField fx:id="visiblePasswordField"
+               promptText="Password"
+               visible="false" managed="false"
+               styleClass="text-field"/>
+
+    <!-- Show Password Option -->
+    <CheckBox fx:id="showPasswordCheckbox"
+              text="Show Password"
+              onAction="#togglePasswordVisibility"
+              styleClass="check-box"/>
+
+    <!-- Login Button -->
+    <Button fx:id="loginButton"
+            text="Login"
+            onAction="#handleLogin"
+            styleClass="button"/>
+</VBox>

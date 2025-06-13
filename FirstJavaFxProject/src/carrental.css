@@ -1,0 +1,280 @@
+/* =================== LIGHT MODE (default) =================== */
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #fff8e1, #ffecb3);
+    -fx-text-fill: #4a342e;
+    -fx-font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* === Pane === */
+.root .pane {
+    -fx-background-color: #fff3e0;
+    -fx-border-color: #ffb74d;
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-padding: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(255,183,77,0.7), 20, 0.5, 0, 5);
+}
+
+/* === Buttons === */
+.root .button {
+    -fx-background-color: #ffca28;
+    -fx-text-fill: #5d4037;
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 50px;
+    -fx-padding: 15 40;
+    -fx-border-color: #ff6f00;
+    -fx-border-width: 3px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255,143,0,0.6), 10, 0.3, 0, 3);
+}
+
+.root .button:hover {
+    -fx-background-color: #ff6f00;
+    -fx-text-fill: #fff8e1;
+    -fx-effect: dropshadow(gaussian, rgba(255,111,0,0.9), 15, 0.6, 0, 5);
+}
+
+/* === Labels === */
+.root .label {
+    -fx-text-fill: #6d4c41;
+    -fx-font-weight: 600;
+    -fx-font-size: 18px;
+}
+
+/* === TextFields === */
+.root .text-field {
+    -fx-background-color: #fffde7;
+    -fx-border-color: #ffb300;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 10 15;
+    -fx-font-size: 16px;
+    -fx-text-fill: #5d4037;
+}
+
+.root .text-field:focused {
+    -fx-border-color: #ff6f00;
+    -fx-effect: dropshadow(gaussian, rgba(255,143,0,0.6), 6, 0.4, 0, 2);
+}
+
+/* === ComboBox === */
+.root .combo-box {
+    -fx-background-color: #fffde7;
+    -fx-border-color: #ffb300;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #5d4037;
+    -fx-padding: 8 12;
+    -fx-font-size: 16px;
+}
+
+/* === TableView === */
+.root .table-view {
+    -fx-background-color: #fff3e0;
+    -fx-border-color: #ffb74d;
+    -fx-border-width: 3px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-pref-width: 900px;
+    -fx-pref-height: 400px;
+    -fx-font-size: 16px;
+}
+
+.root .table-view .table-cell {
+    -fx-text-fill: #5d4037;
+    -fx-padding: 5 10;
+    -fx-background-color: transparent;
+}
+
+/* Column headers */
+.root .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #ffe082, #ffca28);
+}
+
+.root .table-column-header {
+    -fx-text-fill: #5d4037;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: #ffb74d;
+    -fx-border-width: 0 0 2 0;
+}
+
+.root .table-row-cell:hover {
+    -fx-background-color: #ffe082;
+}
+
+/* === Headers and Messages === */
+.root .header {
+    -fx-font-size: 36px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #f57c00;
+    -fx-effect: dropshadow(gaussian, rgba(245,124,0,0.8), 15, 0.5, 0, 4);
+    -fx-padding: 20 0 30 0;
+}
+
+.root .error-label {
+    -fx-text-fill: #e64a19;
+    -fx-font-weight: 700;
+}
+
+.root .success-label {
+    -fx-text-fill: #388e3c;
+    -fx-font-weight: 700;
+}
+
+
+/* =================== DARK MODE =================== */
+
+.root.dark {
+    -fx-background-color: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    -fx-text-fill: #cfd8dc;
+    -fx-font-family: "Orbitron", "Consolas", monospace;
+}
+
+/* === Pane === */
+.root.dark .pane {
+    -fx-background-color: #121212cc;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,0.8), 20, 0.8, 0, 8);
+}
+
+/* === Buttons === */
+.root.dark .button {
+    -fx-background-color: #00e5ff;
+    -fx-text-fill: #000a12;
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-background-radius: 8px;
+    -fx-padding: 14 38;
+    -fx-border-color: #00bcd4;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,1), 14, 0.7, 0, 6);
+    -fx-letter-spacing: 1.5px;
+    -fx-text-transform: uppercase;
+}
+
+.root.dark .button:hover {
+    -fx-background-color: #321873;
+    -fx-text-fill: #b2ebf2;
+    -fx-effect: dropshadow(gaussian, rgb(12, 0, 68), 22, 1, 0, 9);
+}
+
+/* === Labels === */
+.root.dark .label {
+    -fx-text-fill: #59c9f5;
+    -fx-font-weight: 800;
+    -fx-font-size: 17px;
+    -fx-letter-spacing: 0.7px;
+}
+
+/* === TextFields === */
+.root.dark .text-field {
+    -fx-background-color: #263238;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8 14;
+    -fx-font-size: 16px;
+    -fx-text-fill: #b2ebf2;
+    -fx-font-family: "Orbitron", monospace;
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,0.5), 5, 0.3, 0, 4);
+}
+
+.root.dark .text-field:focused {
+    -fx-border-color: #00bcd4;
+    -fx-effect: dropshadow(gaussian, rgba(0,255,255,0.8), 7, 0.4, 0, 5);
+}
+
+/* === ComboBox === */
+.root.dark .combo-box {
+    -fx-background-color: #263238;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #80deea;
+    -fx-padding: 7 12;
+    -fx-font-size: 16px;
+    -fx-font-family: "Orbitron", monospace;
+}
+
+/* === TableView === */
+.root.dark .table-view {
+    -fx-background-color: #121212;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-pref-width: 900px;
+    -fx-pref-height: 400px;
+    -fx-font-size: 16px;
+}
+
+.root.dark .table-view .table-cell {
+    -fx-text-fill: #000000;
+    -fx-padding: 5 10;
+    -fx-background-color: transparent;
+}
+
+/* Column headers */
+.root.dark .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #00bcd4, #0097a7);
+}
+
+.root.dark .table-column-header {
+    -fx-text-fill: #b2ebf2;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: #00e5ff;
+    -fx-border-width: 0 0 2 0;
+}
+
+.root.dark .table-row-cell:hover {
+    -fx-background-color: #06b3de;
+    -fx-text-fill: #000000;
+}
+
+/* === Headers and Messages === */
+.root.dark .header {
+    -fx-font-size: 38px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #00e5ff;
+    -fx-effect: dropshadow(gaussian, rgba(0,255,255,0.9), 25, 0.9, 0, 7);
+    -fx-padding: 22 0 32 0;
+    -fx-font-family: "Orbitron", monospace;
+}
+
+.root.dark .error-label {
+    -fx-text-fill: #ff1744;
+    -fx-font-weight: 900;
+}
+
+.root.dark .success-label {
+    -fx-text-fill: #00e676;
+    -fx-font-weight: 900;
+}
+
+
+/* === ComboBox ListCell (for dropdown items) === */
+.root.dark .combo-box .list-cell {
+    -fx-background-color: #263238;
+    -fx-text-fill: #b2ebf2;
+    -fx-font-family: "Orbitron", monospace;
+}
+
+.root.dark .combo-box .list-cell:hover {
+    -fx-background-color: #00bcd4;
+    -fx-text-fill: #000a12;
+}
